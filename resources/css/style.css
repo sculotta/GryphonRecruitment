@@ -75,8 +75,8 @@ header {
 
 /* main banner */
 .main {
-     position: relative;
-    background: url("../images/skyline1.png.") center center no-repeat;
+    position: relative;
+    background: url("../images/skyline1.png") center center no-repeat;
     background-size: cover;
     height:30rem;
     overflow:hidden;
