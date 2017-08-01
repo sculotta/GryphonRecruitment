@@ -316,6 +316,10 @@ footer {
 	color:white;
 	text-align:center;
   font-family:'Quicksand', sans-serif;
+}
+a[href^=tel] {
+  color:white;
+  font-family:'Quicksand', sans-serif;
 
 }
 .reach {
