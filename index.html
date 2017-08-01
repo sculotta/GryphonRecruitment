@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
   <link rel="icon" href="favicon-feather-logo.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway:400,900" rel="stylesheet">
+  <meta name="viewport" content="width=device-width" />
 </head>
 <body>
 	<header>
@@ -18,9 +19,20 @@
             <ul>
               <li><a href="#jobs">Opportunites</a></li>
               <li><a href="employers.html">Contingency</a></li>
-              <li><a href="#contact">Contact </a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+
+       <div class="dropdown-menu-mobile">
+         <button onclick="myFunction()" class="dropbtn">Menu</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#jobs">Opportunites</a>
+            <a href="employers.html">Contingency</a>
+            <a href="#contacts">Contact</a>
+          </div>
+        </div>
+  
+
 		</nav>
 	</header>
 
@@ -93,6 +105,9 @@
    	   designed by <a id="portfolio" href="#" target="_blank">Scott Culotta</a> 2017
    	 </div>
    </footer>
+
+   <script src="./resources/js/script.js">
+   </script>
 </body>
 </html>
 

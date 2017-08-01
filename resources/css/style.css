@@ -52,7 +52,6 @@ ul li {
 header {
 	border-bottom: 2px solid black;
 	width:100%;
-	overflow:hidden;
 }
 
 #brand span {
@@ -68,8 +67,77 @@ header {
   opacity:0.7;
 }
 
+.dropdown-menu-mobile {
+  display:none;
+}
+
 @media only screen and (max-width:825px) {
 
+.menu {
+  display:none;
+}
+/* Dropdown Button */
+.dropbtn {
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(255,99,71, 0.8);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border-radius:5px;
+    border: none;
+    cursor: pointer;
+    margin-right:3rem;
+
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background: rgb(119,136,153); /* Fallback for older browsers without RGBA-support */
+  background: rgba(119,136,153 0.8);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-menu-mobile {
+    position: relative;
+    display: inline-block;
+   
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 110px;
+    border-radius:4px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1000;
+    
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 8px;
+    text-decoration: none;
+    display: block;
+    border-radius:4px;
+    z-index:9999;
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: tomato;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:block;
+
+}
 
 }
 
@@ -83,7 +151,7 @@ header {
     text-align:center;
 }
 .main:before { /*overlay*/
-  position: absolute;
+  position:absolute; 
   content: "";
   top: 0;
   left: 0;
@@ -467,4 +535,8 @@ footer {
   width:100%;
 }
 
+}
+
+#active {
+  background:darkgrey;
 }
